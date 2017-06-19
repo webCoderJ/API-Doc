@@ -1,0 +1,32 @@
+.card {
+  max-width: 800px;
+  .card-header {
+    position: relative;
+    .mock-btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-top: 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+      .list-title {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .method-tag {
+    background-color: green;
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 5px;
+    padding: 0 8px;
+  }
+}
