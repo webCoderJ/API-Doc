@@ -10,15 +10,21 @@
     data () {
       return {
         apiData: {
-          name: '用户注册',
+          name: '添加动态评论',
           method: 'POST',
-          url: '/user/register',
+          url: '/moment/addComments',
           params: [
             {
-              name: 'phoneNumber',
+              name: 'uid',
               type: 'String',
               required: true,
-              description: '手机号码'
+              description: '用户ID'
+            },
+            {
+              name: 'mid',
+              type: 'String',
+              required: true,
+              description: '动态ID'
             },
             {
               name: 'nickname',
@@ -27,15 +33,21 @@
               description: '昵称'
             },
             {
-              name: 'password',
+              name: 'content',
               type: 'String',
               required: true,
-              description: '密码'
+              description: '评论内容'
+            },
+            {
+              name: 'createTime',
+              type: 'Date',
+              required: true,
+              description: '创建时间'
             }
           ],
           resDemo: {
-            'code': 0,
-            'msg': '注册成功'
+            code: 0,
+            msg: '评论成功！'
           }
         }
       }

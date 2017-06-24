@@ -26,7 +26,7 @@
         </li>
         <li>
           <span class="list-title">返回示例:</span>
-          <span>{{data.resDemo}}</span>
+          <pre>{{parsedJSON}}</pre>
         </li>
       </ul>
     </el-card>
@@ -45,6 +45,11 @@
           params: [],
           resDemo: ''
         }
+      }
+    },
+    computed: {
+      parsedJSON () {
+        return JSON.stringify(this.data.resDemo, null, 2)
       }
     }
   }

@@ -10,32 +10,26 @@
     data () {
       return {
         apiData: {
-          name: '用户注册',
-          method: 'POST',
-          url: '/user/register',
+          name: '取关用户',
+          method: 'DELETE',
+          url: '/relation/unfollow',
           params: [
             {
-              name: 'phoneNumber',
+              name: 'from',
               type: 'String',
               required: true,
-              description: '手机号码'
+              description: '用户ID'
             },
             {
-              name: 'nickname',
+              name: 'to',
               type: 'String',
               required: true,
-              description: '昵称'
-            },
-            {
-              name: 'password',
-              type: 'String',
-              required: true,
-              description: '密码'
+              description: '被关注用户ID'
             }
           ],
           resDemo: {
-            'code': 0,
-            'msg': '注册成功'
+            code: 0,
+            msg: '取消关注成功！'
           }
         }
       }

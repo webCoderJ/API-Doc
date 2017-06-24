@@ -10,32 +10,26 @@
     data () {
       return {
         apiData: {
-          name: '用户注册',
+          name: '关注用户',
           method: 'POST',
-          url: '/user/register',
+          url: '/relation/follow',
           params: [
             {
-              name: 'phoneNumber',
+              name: 'from',
               type: 'String',
               required: true,
-              description: '手机号码'
+              description: '用户ID'
             },
             {
-              name: 'nickname',
+              name: 'to',
               type: 'String',
               required: true,
-              description: '昵称'
-            },
-            {
-              name: 'password',
-              type: 'String',
-              required: true,
-              description: '密码'
+              description: '被关注用户ID'
             }
           ],
           resDemo: {
-            'code': 0,
-            'msg': '注册成功'
+            code: 0,
+            msg: '关注成功！'
           }
         }
       }

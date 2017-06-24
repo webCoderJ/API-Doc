@@ -10,32 +10,26 @@
     data () {
       return {
         apiData: {
-          name: '用户注册',
-          method: 'POST',
-          url: '/user/register',
+          name: '删除动态',
+          method: 'DELETE',
+          url: '/moment/delete',
           params: [
             {
-              name: 'phoneNumber',
+              name: 'uid',
               type: 'String',
               required: true,
-              description: '手机号码'
+              description: '用户ID'
             },
             {
-              name: 'nickname',
+              name: 'mid',
               type: 'String',
               required: true,
-              description: '昵称'
-            },
-            {
-              name: 'password',
-              type: 'String',
-              required: true,
-              description: '密码'
+              description: '动态ID'
             }
           ],
           resDemo: {
-            'code': 0,
-            'msg': '注册成功'
+            code: 0,
+            msg: '删除成功！'
           }
         }
       }
