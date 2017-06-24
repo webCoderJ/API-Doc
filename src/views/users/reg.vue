@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <c-api-card :data="apiData"></c-api-card>
-  </div>
+  <c-api-card :data="apiData"></c-api-card>
 </template>
 
 <script>
@@ -45,7 +43,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  @import './style.scss';
-</style>

@@ -1,6 +1,7 @@
 .app-wrapper {
   position: relative;
   width: 100%;
+  min-width: 1024px;
   height: 100%;
 }
 
@@ -14,19 +15,18 @@
   overflow: hidden;
   transition: all .28s ease-out;
   .sidebar {
+    width: 100%;
     transition: all .28s ease-out;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: -17px;
     overflow-y: scroll;
   }
 }
 
 .main-container {
+  position: relative;
   min-height: 100%;
   transition: all .28s ease-out;
   margin-left: 180px;
-  padding: 20px;
 }
